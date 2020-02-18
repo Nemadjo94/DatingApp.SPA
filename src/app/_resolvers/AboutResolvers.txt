@@ -1,0 +1,6 @@
+Route Resolvers are activated before given route so we have data in our component before initialization. We set up resolvers in routes.ts file for the needed components.
+Resolvers are used to get the data on activated route which we set up in our routes.ts file.
+They are used to replace api calls on component initialization with url route activated methods which means that components cannot init if there is no data, which
+eases error handling and we also navigate back on errors, which is another good thing
+We make a file _resolvers which is injectable globally. 
+Then we make a resolver for the needed components. Naming convention is as follows - [component name].resolver.ts
